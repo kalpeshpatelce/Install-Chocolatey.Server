@@ -28,9 +28,8 @@ Two Type of Chocolatey Server
 Please Refer https://chocolatey.org/docs/how-to-set-up-chocolatey-server
 
 ## Setup Manually
-```bash
 Setup Manually
-⋅*If your Windows updates are not up to date, there are two required Windows updates you are going to need (heads up they take awhile)
+*If your Windows updates are not up to date, there are two required Windows updates you are going to need (heads up they take awhile)
   *Install KB2919355 - choco install KB2919355 -y - this one or the other Windows update takes a very long time to install, just be patient
   *Restart your machine.
 Install KB2919442 - choco install KB2919442 -y (IIRC this is the one that takes forever...) -
@@ -51,4 +50,4 @@ Right click on the App_Data subfolder and add the following permissions:
 IIS_IUSRS - Modify
 IIS APPPOOL\<app pool name> - Modify
 
-````
+
