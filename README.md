@@ -30,9 +30,9 @@ Please Refer https://chocolatey.org/docs/how-to-set-up-chocolatey-server
 ## Setup Manually
 ```bash
 Setup Manually
-⋅⋅*If your Windows updates are not up to date, there are two required Windows updates you are going to need (heads up they take awhile)
-1.Install KB2919355 - choco install KB2919355 -y - this one or the other Windows update takes a very long time to install, just be patient
-2. Restart your machine.
+⋅*If your Windows updates are not up to date, there are two required Windows updates you are going to need (heads up they take awhile)
+  *Install KB2919355 - choco install KB2919355 -y - this one or the other Windows update takes a very long time to install, just be patient
+  *Restart your machine.
 Install KB2919442 - choco install KB2919442 -y (IIRC this is the one that takes forever...) -
 Reboot that machine again
 You need at least .NET Framework 4.6. If you don't have that or newer, then run choco install dotnet4.6.1 -y
