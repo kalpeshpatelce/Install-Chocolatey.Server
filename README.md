@@ -27,9 +27,8 @@ Two Type of Chocolatey Server
 # Install Chocolatey Server in On-Premises
 Please Refer https://chocolatey.org/docs/how-to-set-up-chocolatey-server
 
-OR
 To install and configure Chocolatey.Server using PowerShell run the following script in an elevated administrator session:
-###Download Script from Below URL
+### Download Script from Below URL
 https://github.com/kalpeshpatelce/Install-Chocolatey.Server/blob/master/InstallChocolateyServer-OnPremises.ps1
 
 
