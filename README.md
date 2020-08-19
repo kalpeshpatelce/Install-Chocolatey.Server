@@ -1,13 +1,13 @@
 # Install-Chocolatey.Server
 Install Chocolatey.Server
-⋅⋅* Problem:
+## H2 Problem:
 i want to install Android Studio in 500 PCS. so to install android Studio in 500 PCs Traditional way is that you have go to each computer 
 1) Login to PCs
 2) download Software from Server Share
 3) Install software it manually (like Click next & accept etc...)
 
 ⋅so I googled to find some solution that automize all the above Process.
-⋅⋅* Solution:
+## H2 Solution:
 you have to integrate Ansible with Chocolatey Server will solve my Problem. ii is similar to Install Software in Linux
 
 
