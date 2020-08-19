@@ -1,14 +1,14 @@
 # Install-Chocolatey.Server
 Install Chocolatey.Server
 ## Problem:
-i want to install Android Studio in 500 PCS. so to install android Studio in 500 PCs Traditional way is that you have go to each computer 
+I want to Install Android Studio in 500 PCS. To install Android Studio in 500 PCs Traditional way is that you have go to each computer 
 1) Login to PCs
 2) download Software from Server Share
 3) Install software it manually (like Click next & accept etc...)
 
-⋅so I googled to find some solution that automize all the above Process.
+So I googled to find some solution that automize all the above Process.
 ## Solution:
-you have to integrate Ansible with Chocolatey Server will solve my Problem. ii is similar to Install Software in Linux
+You have to integrate Ansible with Chocolatey Server will solve the Problem. ii is similar to Install Software in Linux
 
 
 
@@ -18,7 +18,7 @@ Basic Idea Behind the Chocolatey Server is that to Provide Software Repository f
 ## Linux:
 As we know that if we want to install some software in linux machine we can install it from shell with unattend mode. we do not need to interact with Software Gui. It will automatically installed as per unattended Command Parameter
 ## Windows:
-but in Windows if you want to install software you have to interact with Software Gui Like Next button or OK Button so it is very Boring Process to install software in 500 PCS.
+But in Windows if you want to install software you have to interact with Software Gui Like Next button or OK Button so it is very Boring Process to install software in 500 PCS.
 Now the Chocolatey server come in picture.chocolatey Server provide us Software Repository 
 Two Type of Chocolatey Server
 - Public Chocolatey Server (refer https://chocolatey.org/packages)
@@ -27,11 +27,12 @@ Two Type of Chocolatey Server
 # Install Chocolatey Server in On-Premises
 Please Refer https://chocolatey.org/docs/how-to-set-up-chocolatey-server
 
+## Setup Manually
 ```bash
 Setup Manually
-If your Windows updates are not up to date, there are two required Windows updates you are going to need (heads up they take awhile)
-Install KB2919355 - choco install KB2919355 -y - this one or the other Windows update takes a very long time to install, just be patient
-Restart your machine.
+⋅⋅*If your Windows updates are not up to date, there are two required Windows updates you are going to need (heads up they take awhile)
+1.Install KB2919355 - choco install KB2919355 -y - this one or the other Windows update takes a very long time to install, just be patient
+2. Restart your machine.
 Install KB2919442 - choco install KB2919442 -y (IIRC this is the one that takes forever...) -
 Reboot that machine again
 You need at least .NET Framework 4.6. If you don't have that or newer, then run choco install dotnet4.6.1 -y
