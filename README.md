@@ -8,7 +8,7 @@ I want to Install Android Studio in 500 PCS. To install Android Studio in 500 PC
 
 So I googled to find some solution that automize all the above Process.
 ## Solution:
-You have to integrate Ansible with Chocolatey Server will solve the Problem. ii is similar to Install Software in Linux
+You have to Integrate Ansible with Chocolatey Server will solve the Problem. ii is similar to Install Software in Linux
 
 
 
@@ -27,27 +27,9 @@ Two Type of Chocolatey Server
 # Install Chocolatey Server in On-Premises
 Please Refer https://chocolatey.org/docs/how-to-set-up-chocolatey-server
 
-## Setup Manually
-Setup Manually
-*If your Windows updates are not up to date, there are two required Windows updates you are going to need (heads up they take awhile)
-  *Install KB2919355 - choco install KB2919355 -y - this one or the other Windows update takes a very long time to install, just be patient
-  *Restart your machine.
-Install KB2919442 - choco install KB2919442 -y (IIRC this is the one that takes forever...) -
-Reboot that machine again
-You need at least .NET Framework 4.6. If you don't have that or newer, then run choco install dotnet4.6.1 -y
-Reboot one more time, thanks Windows!!
-Install or upgrade the package - choco upgrade chocolatey.server -y
-Ensure IIS is installed. You can try choco install IIS-WebServer --source windowsfeatures
-Ensure that ASP.NET is installed. Try choco install IIS-ASPNET45 --source windowsfeatures (Windows Server 2012). Use IIS-ASPNET for Windows Server 2008, possibly IIS-ASPNET46 for Windows Server 2016.
-Disable or remove the Default website
-Set up an app pool for Chocolatey.Server. Ensure 32-bit is enabled and the managed runtime version is v4.0 (or some version of 4). Ensure it is "Integrated" and not "Classic".
-Set up an IIS website pointed to the install location and set it to use the app pool.
-Go to explorer and right click on c:\tools\chocolatey.server and add the following permissions:
-IIS_IUSRS - Read
-IUSR - Read
-IIS APPPOOL\<app pool name> - Read
-Right click on the App_Data subfolder and add the following permissions:
-IIS_IUSRS - Modify
-IIS APPPOOL\<app pool name> - Modify
+OR
+To install and configure Chocolatey.Server using PowerShell run the following script in an elevated administrator session:
+###Download Script from Below URL
+https://github.com/kalpeshpatelce/Install-Chocolatey.Server/blob/master/InstallChocolateyServer-OnPremises.ps1
 
 
