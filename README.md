@@ -31,4 +31,16 @@ To install and configure Chocolatey.Server using PowerShell run the following sc
 ### Download Script from Below URL
 https://github.com/kalpeshpatelce/Install-Chocolatey.Server/blob/master/InstallChocolateyServer-OnPremises.ps1
 
+## Please check IIS Manager
+![Image of IIS](https://media-exp1.licdn.com/dms/image/C4E12AQHf-HDtk-eTTw/article-inline_image-shrink_1500_2232/0?e=1603324800&v=beta&t=SHIAeXWC7dK9PlL9if4dT5xi1m_hhDlSf-zajIeM8sQ)
 
+## Check Chocolatey Server Configured successfully By Enter URL http://localhost in Browser
+![Image of IIS](https://media-exp1.licdn.com/dms/image/C4E12AQG092JYA3XbxA/article-inline_image-shrink_1500_2232/0?e=1603324800&v=beta&t=hJeEdNzupspa4_MBppSJfq487mdGXZcHrM0xhzMqnCc)
+
+## Set APIKey For Your Chocolatey Server
+
+Open Powershell run as administrator and type below command
+
+```bash
+choco setapikey -s="http://ServerIP/chocolatey " -k ="123456"
+````
